@@ -5,4 +5,4 @@ Static portfolio and sample QA artifacts for remote Software Quality Assurance o
 - `index.html` — profile and selected experience
 - `artifacts/` — fictional booking-flow test plan, test cases and bug report
 
-The booking-flow artifacts are fictional demonstrations. Professional experience is summarized at a high level. No client-specific evidence, system details, findings, personal phone number, or email address are included in this public site.
+The booking-flow artifacts are fictional demonstrations. Professional experience is summarized at a high level. No client-specific evidence, system details, findings, or personal phone number are included. Ali's email address is displayed for professional contact.
