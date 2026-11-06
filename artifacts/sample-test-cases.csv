@@ -1,0 +1,11 @@
+Case ID,Area,Scenario,Preconditions,Steps,Expected result,Priority
+BK-001,Search,Search with valid service and date,Service and date are available,"Select service; choose a future date; submit search",Matching availability is displayed,High
+BK-002,Search,Search with no matching availability,No slots exist for chosen date,"Select service; choose date with no slots; submit search",Clear empty state appears with a way to change search,Medium
+BK-003,Search,Submit without required service,Search page is open,"Leave service empty; submit",Inline validation identifies the missing service,High
+BK-004,Booking,Complete booking with valid details,An available slot is shown,"Choose slot; enter valid sample details; confirm",Booking is created once and confirmation reference is shown,High
+BK-005,Booking,Submit with malformed email,An available slot is shown,"Enter malformed email; confirm",Submission is blocked and email field explains the problem,Medium
+BK-006,Booking,Double click confirmation,Valid booking details are entered,"Click confirm twice quickly",Only one booking is created,High
+BK-007,Recovery,Submission times out,Valid details entered; simulate safe test timeout,"Submit booking; wait for timeout",User gets a clear status and can safely check or retry without duplicate booking,High
+BK-008,Accessibility,Keyboard-only booking,Booking page is open,"Navigate search and form using keyboard only",Focus order is logical and all controls can be reached and activated,Medium
+BK-009,Responsive,Use booking flow on narrow viewport,Test device viewport set to 360px,"Search; select slot; complete form",Content and controls remain usable without horizontal scrolling,Medium
+BK-010,Confirmation,Refresh confirmation page,Booking has been confirmed,"Refresh confirmation view",Confirmation remains accurate and does not create another booking,High

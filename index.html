@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ali Balogun's software quality assurance and testing portfolio.">
+  <title>Ali Balogun — Software QA</title>
+  <style>
+    :root { --ink:#18313d; --paper:#f5f7f6; --white:#fff; --orange:#d95b32; --mint:#d8ebe5; --line:#cbd6d3; --muted:#53656a; }
+    * { box-sizing:border-box }
+    body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.65 "Segoe UI", Arial, sans-serif }
+    a { color:#9a381b; text-underline-offset:3px }
+    a:focus-visible { outline:3px solid var(--orange); outline-offset:3px }
+    .page { max-width:1060px; margin:auto; padding:0 28px }
+    header { border-bottom:1px solid var(--line); padding:24px 0; display:flex; justify-content:space-between; gap:20px; align-items:center }
+    .brand { font-weight:700; letter-spacing:.01em }
+    nav { display:flex; gap:22px; flex-wrap:wrap }
+    nav a { color:var(--ink); font-size:.92rem }
+    main { padding:70px 0 30px }
+    .intro { display:grid; grid-template-columns:1.35fr .65fr; gap:54px; align-items:end; padding-bottom:64px }
+    h1 { font-size:clamp(2.8rem,7vw,5.6rem); letter-spacing:-.065em; line-height:.98; margin:0 0 22px; max-width:760px }
+    h2 { font-size:2rem; letter-spacing:-.04em; line-height:1.15; margin:0 0 16px }
+    h3 { font-size:1.15rem; margin:0 0 10px }
+    p { margin:0 0 16px }
+    .lead { max-width:660px; color:#344c54; font-size:1.2rem }
+    .availability { border-left:4px solid var(--orange); padding:14px 0 14px 18px; color:var(--muted) }
+    .availability strong { display:block; color:var(--ink); font-size:1.05rem }
+    .section { padding:48px 0; border-top:1px solid var(--line) }
+    .section-head { display:grid; grid-template-columns:.55fr 1fr; gap:30px; margin-bottom:28px }
+    .section-head p { color:var(--muted); max-width:620px }
+    .case { display:grid; grid-template-columns:1fr 1fr; gap:26px; background:var(--white); border:1px solid var(--line); padding:26px; margin:14px 0 }
+    .case h3 { font-size:1.3rem }
+    .tag { display:inline-block; background:var(--mint); padding:4px 9px; font-size:.8rem; margin-bottom:13px }
+    ul { padding-left:20px; margin:8px 0 }
+    li { margin:4px 0 }
+    .artifact-list { display:grid; grid-template-columns:repeat(3,1fr); gap:14px }
+    .artifact { padding:20px; border-top:3px solid var(--orange); background:var(--white) }
+    .artifact p { font-size:.94rem; color:var(--muted) }
+    .skills { display:flex; gap:10px; flex-wrap:wrap }
+    .skills span { border:1px solid var(--line); padding:7px 11px; font-size:.9rem; background:#fff }
+    .note { background:var(--mint); padding:18px 22px; max-width:780px }
+    footer { border-top:1px solid var(--line); padding:28px 0 42px; color:var(--muted); display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap }
+    @media(max-width:700px) { .intro,.section-head,.case { grid-template-columns:1fr; gap:18px } .intro { padding-top:20px } main { padding-top:36px } .artifact-list { grid-template-columns:1fr } header { align-items:flex-start; flex-direction:column } }
+    @media(prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header><div class="brand">Ali Balogun <span aria-hidden="true">/</span> Software QA</div><nav aria-label="Main navigation"><a href="#work">Selected work</a><a href="#artifacts">Sample artifacts</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav></header>
+    <main>
+      <section class="intro">
+        <div><h1>Make the important paths work.</h1><p class="lead">I write and carry out test cases, check end-to-end workflows, and make defects clear enough for a team to reproduce and fix.</p></div>
+        <aside class="availability"><strong>Abuja, Nigeria · Remote</strong>Three-week notice<br><a href="https://www.linkedin.com/in/alibalogun996">Contact via LinkedIn</a></aside>
+      </section>
+      <section class="section" id="work">
+        <div class="section-head"><h2>Selected work</h2><p>Project summaries are intentionally high-level. Client-specific evidence, system details and confidential findings are not published.</p></div>
+        <article class="case"><div><span class="tag">Professional project · workflow and API QA</span><h3>CarAlert247</h3><p>Supported quality checks on a UK parking-enforcement product before handover. The work sat alongside requirements and delivery coordination for workflows spanning nine penalty types.</p></div><div><strong>Testing contribution</strong><ul><li>Ran end-to-end checks across key user workflows and API-connected steps.</li><li>Raised edge cases around missing endpoints and process gaps with the delivery team.</li><li>Helped clarify expected behaviour through requirements and acceptance criteria.</li><li>Worked with a 5–7 person team through a seven-month delivery and December 2025 handover.</li></ul></div></article>
+        <article class="case"><div><span class="tag">Professional project · review and acceptance</span><h3>Cross-functional product delivery</h3><p>Across software projects in healthcare, education technology and consumer services, I have worked with product, design, engineering and QA colleagues to check that agreed requirements are reflected in delivered workflows.</p></div><div><strong>How I contribute</strong><ul><li>Review user stories and acceptance criteria before testing.</li><li>Record observed behaviour and discuss defects with the people who can resolve them.</li><li>Support UI/UX reviews, demos and user acceptance activities.</li><li>Keep status and open questions visible to project stakeholders.</li></ul></div></article>
+      </section>
+      <section class="section" id="artifacts">
+        <div class="section-head"><h2>Sample artifacts</h2><p>The examples below use a fictional booking flow. They demonstrate a practical testing approach without exposing a real client's systems or data.</p></div>
+        <div class="artifact-list">
+          <article class="artifact"><h3>Test plan</h3><p>Scope, assumptions, test approach, entry and exit checks, and defect workflow.</p><a href="artifacts/sample-test-plan.md">Read the plan</a></article>
+          <article class="artifact"><h3>Test cases</h3><p>Positive, negative and boundary scenarios for search, booking and confirmation.</p><a href="artifacts/sample-test-cases.csv">View the cases (CSV)</a></article>
+          <article class="artifact"><h3>Bug report</h3><p>A reproducible example with expected and actual results, impact and evidence notes.</p><a href="artifacts/sample-bug-report.md">Read the report</a></article>
+        </div>
+      </section>
+      <section class="section" id="approach">
+        <div class="section-head"><h2>How I work</h2><p>Start from what a person needs to do. Turn that into observable checks. Make failures actionable. Confirm the fix.</p></div>
+        <div class="skills"><span>Test case design and execution</span><span>End-to-end workflow checks</span><span>API workflow QA</span><span>UAT support</span><span>Defect reporting</span><span>Requirements and acceptance criteria</span><span>Jira</span><span>Stakeholder reporting</span></div>
+        <p class="note" style="margin-top:24px">My project work has included documenting requirements, carrying out test cases, checking workflows and APIs, and coordinating follow-through with delivery teams. The attached CV gives further detail on my project and technical background.</p>
+      </section>
+    </main>
+    <footer id="contact"><span>Ali Balogun · Abuja, Nigeria</span><span><a href="https://www.linkedin.com/in/alibalogun996">LinkedIn</a> · <a href="https://github.com/oberex">GitHub</a></span></footer>
+  </div>
+</body>
+</html>
